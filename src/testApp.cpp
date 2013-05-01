@@ -235,6 +235,9 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+  if (key == 'f'){
+    ofToggleFullscreen();
+  }
   if (key == 'a' || key == '1'){
     goToNumber(&digit0,one);
   }
